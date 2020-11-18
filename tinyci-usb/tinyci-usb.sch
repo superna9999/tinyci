@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "TinyCI"
+Title "TinyCI USB"
 Date ""
-Rev "0.5"
-Comp ""
+Rev "0.1"
+Comp "https://github.com/superna9999/tinyci"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -16,29 +16,29 @@ $EndDescr
 $Comp
 L Connector:Jack-DC J1
 U 1 1 5FA9B28D
-P 1750 2550
-F 0 "J1" H 1807 2875 50  0000 C CNN
-F 1 "Jack-DC" H 1807 2784 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1800 2510 50  0001 C CNN
-F 3 "~" H 1800 2510 50  0001 C CNN
-	1    1750 2550
+P 1600 2550
+F 0 "J1" H 1657 2875 50  0000 C CNN
+F 1 "Jack-DC" H 1657 2784 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1650 2510 50  0001 C CNN
+F 3 "~" H 1650 2510 50  0001 C CNN
+	1    1600 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 5FAA94F4
-P 2300 2650
-F 0 "#PWR04" H 2300 2400 50  0001 C CNN
-F 1 "GND" H 2305 2477 50  0000 C CNN
-F 2 "" H 2300 2650 50  0001 C CNN
-F 3 "" H 2300 2650 50  0001 C CNN
-	1    2300 2650
+P 2150 2650
+F 0 "#PWR04" H 2150 2400 50  0001 C CNN
+F 1 "GND" H 2155 2477 50  0000 C CNN
+F 2 "" H 2150 2650 50  0001 C CNN
+F 3 "" H 2150 2650 50  0001 C CNN
+	1    2150 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 2450 2300 2450
+	1900 2450 2150 2450
 Wire Wire Line
-	2050 2650 2300 2650
+	1900 2650 2150 2650
 $Comp
 L power:GND #PWR019
 U 1 1 5FAA6F16
@@ -88,53 +88,53 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR02
 U 1 1 5FAAE239
-P 2300 2450
-F 0 "#PWR02" H 2300 2350 50  0001 C CNN
-F 1 "+5V" H 2300 2725 50  0000 C CNN
-F 2 "" H 2300 2450 50  0001 C CNN
-F 3 "" H 2300 2450 50  0001 C CNN
-	1    2300 2450
+P 2150 2450
+F 0 "#PWR02" H 2150 2350 50  0001 C CNN
+F 1 "+5V" H 2150 2725 50  0000 C CNN
+F 2 "" H 2150 2450 50  0001 C CNN
+F 3 "" H 2150 2450 50  0001 C CNN
+	1    2150 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 4400 4550 4400
+	5100 4500 4850 4500
 Wire Wire Line
-	4800 4000 4550 4000
+	5100 4100 4850 4100
 Wire Wire Line
-	5400 4000 5700 4000
+	5700 4100 6000 4100
 Wire Wire Line
-	7050 4000 7350 4000
+	7350 4100 7650 4100
 Wire Wire Line
-	7050 5250 7350 5250
+	7350 5350 7650 5350
 Wire Wire Line
-	7050 5550 7300 5550
+	7350 5650 7600 5650
 Wire Wire Line
-	6450 5250 6200 5250
+	6750 5350 6500 5350
 Wire Wire Line
-	4800 5650 4550 5650
+	5100 5750 4850 5750
 Wire Wire Line
-	5400 5550 5650 5550
+	5700 5650 5950 5650
 Wire Wire Line
-	4800 5250 4550 5250
+	5100 5350 4850 5350
 Wire Wire Line
-	6450 5650 6200 5650
+	6750 5750 6500 5750
 Wire Wire Line
-	6450 4000 6200 4000
+	6750 4100 6500 4100
 Wire Wire Line
-	6450 4400 6200 4400
-Text Label 4550 4400 0    50   ~ 0
+	6750 4500 6500 4500
+Text Label 4850 4500 0    50   ~ 0
 COM
-Text Label 4550 5650 0    50   ~ 0
+Text Label 4850 5750 0    50   ~ 0
 COM
-Text Label 6200 5650 0    50   ~ 0
+Text Label 6500 5750 0    50   ~ 0
 COM
-Text Label 6200 4400 0    50   ~ 0
+Text Label 6500 4500 0    50   ~ 0
 COM
-Text Label 7250 4300 2    50   ~ 0
+Text Label 7550 4400 2    50   ~ 0
 NO_2
-Text Label 5650 5550 2    50   ~ 0
+Text Label 5950 5650 2    50   ~ 0
 NO_3
-Text Label 7300 5550 2    50   ~ 0
+Text Label 7600 5650 2    50   ~ 0
 NO_4
 Text Label 3750 4000 0    50   ~ 0
 COIL_2_2
@@ -296,36 +296,36 @@ Text Label 3750 5200 0    50   ~ 0
 COIL_2_4
 Text Label 3750 5500 0    50   ~ 0
 COIL_1_4
-Text Label 5700 4000 0    50   ~ 0
+Text Label 6000 4100 0    50   ~ 0
 COIL_2_1
-Text Label 4550 4000 0    50   ~ 0
+Text Label 4850 4100 0    50   ~ 0
 COIL_1_1
-Text Label 7350 4000 0    50   ~ 0
+Text Label 7650 4100 0    50   ~ 0
 COIL_2_2
-Text Label 6200 4000 0    50   ~ 0
+Text Label 6500 4100 0    50   ~ 0
 COIL_1_2
-Text Label 5650 5250 0    50   ~ 0
+Text Label 5950 5350 0    50   ~ 0
 COIL_2_3
-Text Label 4550 5250 0    50   ~ 0
+Text Label 4850 5350 0    50   ~ 0
 COIL_1_3
-Text Label 7350 5250 0    50   ~ 0
+Text Label 7650 5350 0    50   ~ 0
 COIL_2_4
-Text Label 6200 5250 0    50   ~ 0
+Text Label 6500 5350 0    50   ~ 0
 COIL_1_4
 $Comp
 L power:+5V #PWR013
 U 1 1 5FAEED0A
-P 5850 3100
-F 0 "#PWR013" H 5850 3000 50  0001 C CNN
-F 1 "+5V" H 5850 3375 50  0000 C CNN
-F 2 "" H 5850 3100 50  0001 C CNN
-F 3 "" H 5850 3100 50  0001 C CNN
-	1    5850 3100
+P 7200 2400
+F 0 "#PWR013" H 7200 2300 50  0001 C CNN
+F 1 "+5V" H 7200 2675 50  0000 C CNN
+F 2 "" H 7200 2400 50  0001 C CNN
+F 3 "" H 7200 2400 50  0001 C CNN
+	1    7200 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 3100 5850 3400
-Text Label 5850 3400 0    50   ~ 0
+	7200 2400 7200 2700
+Text Label 7200 2700 0    50   ~ 0
 COM
 Wire Wire Line
 	9950 4950 9400 4950
@@ -342,69 +342,69 @@ NO_4
 $Comp
 L Device:CP C3
 U 1 1 5FABF81D
-P 5100 2100
-F 0 "C3" H 5218 2146 50  0000 L CNN
-F 1 "10uF" H 5218 2055 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 5138 1950 50  0001 C CNN
-F 3 "~" H 5100 2100 50  0001 C CNN
-	1    5100 2100
+P 4300 2500
+F 0 "C3" H 4418 2546 50  0000 L CNN
+F 1 "10uF" H 4418 2455 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 4338 2350 50  0001 C CNN
+F 3 "~" H 4300 2500 50  0001 C CNN
+	1    4300 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR023
 U 1 1 5FAC7EE1
-P 3800 2250
-F 0 "#PWR023" H 3800 2000 50  0001 C CNN
-F 1 "GND" H 3805 2077 50  0000 C CNN
-F 2 "" H 3800 2250 50  0001 C CNN
-F 3 "" H 3800 2250 50  0001 C CNN
-	1    3800 2250
+P 3000 2650
+F 0 "#PWR023" H 3000 2400 50  0001 C CNN
+F 1 "GND" H 3005 2477 50  0000 C CNN
+F 2 "" H 3000 2650 50  0001 C CNN
+F 3 "" H 3000 2650 50  0001 C CNN
+	1    3000 2650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR024
 U 1 1 5FAC845A
-P 4550 2250
-F 0 "#PWR024" H 4550 2000 50  0001 C CNN
-F 1 "GND" H 4555 2077 50  0000 C CNN
-F 2 "" H 4550 2250 50  0001 C CNN
-F 3 "" H 4550 2250 50  0001 C CNN
-	1    4550 2250
+P 3750 2650
+F 0 "#PWR024" H 3750 2400 50  0001 C CNN
+F 1 "GND" H 3755 2477 50  0000 C CNN
+F 2 "" H 3750 2650 50  0001 C CNN
+F 3 "" H 3750 2650 50  0001 C CNN
+	1    3750 2650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR025
 U 1 1 5FAC8A20
-P 5100 2250
-F 0 "#PWR025" H 5100 2000 50  0001 C CNN
-F 1 "GND" H 5105 2077 50  0000 C CNN
-F 2 "" H 5100 2250 50  0001 C CNN
-F 3 "" H 5100 2250 50  0001 C CNN
-	1    5100 2250
+P 4300 2650
+F 0 "#PWR025" H 4300 2400 50  0001 C CNN
+F 1 "GND" H 4305 2477 50  0000 C CNN
+F 2 "" H 4300 2650 50  0001 C CNN
+F 3 "" H 4300 2650 50  0001 C CNN
+	1    4300 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 1950 3800 1950
+	3450 2350 3000 2350
 $Comp
 L power:+5V #PWR022
 U 1 1 5FAE0965
-P 3800 1950
-F 0 "#PWR022" H 3800 1850 50  0001 C CNN
-F 1 "+5V" H 3800 2225 50  0000 C CNN
-F 2 "" H 3800 1950 50  0001 C CNN
-F 3 "" H 3800 1950 50  0001 C CNN
-	1    3800 1950
+P 3000 2350
+F 0 "#PWR022" H 3000 2250 50  0001 C CNN
+F 1 "+5V" H 3000 2625 50  0000 C CNN
+F 2 "" H 3000 2350 50  0001 C CNN
+F 3 "" H 3000 2350 50  0001 C CNN
+	1    3000 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5FB02001
-P 5100 1950
-F 0 "#PWR0101" H 5100 1800 50  0001 C CNN
-F 1 "+3.3V" H 5115 2123 50  0000 C CNN
-F 2 "" H 5100 1950 50  0001 C CNN
-F 3 "" H 5100 1950 50  0001 C CNN
-	1    5100 1950
+P 4300 2350
+F 0 "#PWR0101" H 4300 2200 50  0001 C CNN
+F 1 "+3.3V" H 4315 2523 50  0000 C CNN
+F 2 "" H 4300 2350 50  0001 C CNN
+F 3 "" H 4300 2350 50  0001 C CNN
+	1    4300 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -424,29 +424,29 @@ Connection ~ 3300 5200
 $Comp
 L Regulator_Linear:AMS1117-3.3 U1
 U 1 1 5FB11678
-P 4550 1950
-F 0 "U1" H 4550 2192 50  0000 C CNN
-F 1 "AMS1117-3.3" H 4550 2101 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4550 2150 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 4650 1700 50  0001 C CNN
-	1    4550 1950
+P 3750 2350
+F 0 "U1" H 3750 2592 50  0000 C CNN
+F 1 "AMS1117-3.3" H 3750 2501 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3750 2550 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 3850 2100 50  0001 C CNN
+	1    3750 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 1950 5100 1950
-Connection ~ 5100 1950
+	4050 2350 4300 2350
+Connection ~ 4300 2350
 $Comp
 L Device:CP C1
 U 1 1 5FB22FA6
-P 3800 2100
-F 0 "C1" H 3918 2146 50  0000 L CNN
-F 1 "10uF" H 3918 2055 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 3838 1950 50  0001 C CNN
-F 3 "~" H 3800 2100 50  0001 C CNN
-	1    3800 2100
+P 3000 2500
+F 0 "C1" H 3118 2546 50  0000 L CNN
+F 1 "10uF" H 3118 2455 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 3038 2350 50  0001 C CNN
+F 3 "~" H 3000 2500 50  0001 C CNN
+	1    3000 2500
 	1    0    0    -1  
 $EndComp
-Connection ~ 3800 1950
+Connection ~ 3000 2350
 $Comp
 L Transistor_BJT:BC337 Q1
 U 1 1 5FB27126
@@ -498,55 +498,55 @@ Connection ~ 3300 4300
 $Comp
 L Relay:SANYOU_SRD_Form_C K1
 U 1 1 5FB2C886
-P 5100 4200
-F 0 "K1" V 4533 4200 50  0000 C CNN
-F 1 "SANYOU_SRD_Form_C" V 4624 4200 50  0000 C CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 5550 4150 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5100 4200 50  0001 C CNN
-	1    5100 4200
+P 5400 4300
+F 0 "K1" V 4833 4300 50  0000 C CNN
+F 1 "SANYOU_SRD_Form_C" V 4924 4300 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 5850 4250 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5400 4300 50  0001 C CNN
+	1    5400 4300
 	0    1    1    0   
 $EndComp
 $Comp
 L Relay:SANYOU_SRD_Form_C K2
 U 1 1 5FB6E823
-P 5100 5450
-F 0 "K2" V 4533 5450 50  0000 C CNN
-F 1 "SANYOU_SRD_Form_C" V 4624 5450 50  0000 C CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 5550 5400 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5100 5450 50  0001 C CNN
-	1    5100 5450
+P 5400 5550
+F 0 "K2" V 4833 5550 50  0000 C CNN
+F 1 "SANYOU_SRD_Form_C" V 4924 5550 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 5850 5500 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5400 5550 50  0001 C CNN
+	1    5400 5550
 	0    1    1    0   
 $EndComp
 $Comp
 L Relay:SANYOU_SRD_Form_C K4
 U 1 1 5FB6F155
-P 6750 5450
-F 0 "K4" V 6183 5450 50  0000 C CNN
-F 1 "SANYOU_SRD_Form_C" V 6274 5450 50  0000 C CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 7200 5400 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 6750 5450 50  0001 C CNN
-	1    6750 5450
+P 7050 5550
+F 0 "K4" V 6483 5550 50  0000 C CNN
+F 1 "SANYOU_SRD_Form_C" V 6574 5550 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 7500 5500 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 7050 5550 50  0001 C CNN
+	1    7050 5550
 	0    1    1    0   
 $EndComp
 $Comp
 L Relay:SANYOU_SRD_Form_C K3
 U 1 1 5FB74CF4
-P 6750 4200
-F 0 "K3" V 6183 4200 50  0000 C CNN
-F 1 "SANYOU_SRD_Form_C" V 6274 4200 50  0000 C CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 7200 4150 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 6750 4200 50  0001 C CNN
-	1    6750 4200
+P 7050 4300
+F 0 "K3" V 6483 4300 50  0000 C CNN
+F 1 "SANYOU_SRD_Form_C" V 6574 4300 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 7500 4250 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 7050 4300 50  0001 C CNN
+	1    7050 4300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5400 5250 5650 5250
+	5700 5350 5950 5350
 Wire Wire Line
-	7050 4300 7250 4300
-NoConn ~ 7050 4300
-NoConn ~ 7050 5550
-NoConn ~ 5400 5550
-NoConn ~ 5400 4300
+	7350 4400 7550 4400
+NoConn ~ 7350 4400
+NoConn ~ 7350 5650
+NoConn ~ 5700 5650
+NoConn ~ 5700 4400
 $Comp
 L Device:Polyfuse F4
 U 1 1 5FC282F8
@@ -770,19 +770,19 @@ Wire Wire Line
 Connection ~ 9400 6000
 Wire Wire Line
 	9400 6000 8850 6000
-Text Label 5650 4300 2    50   ~ 0
+Text Label 5950 4400 2    50   ~ 0
 NO_1
 Wire Wire Line
-	5400 4300 5650 4300
+	5700 4400 5950 4400
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5FBBB948
-P 5100 1950
-F 0 "TP1" V 5054 2138 50  0000 L CNN
-F 1 "TestPoint" V 5145 2138 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5300 1950 50  0001 C CNN
-F 3 "~" H 5300 1950 50  0001 C CNN
-	1    5100 1950
+P 4300 2350
+F 0 "TP1" V 4254 2538 50  0000 L CNN
+F 1 "TestPoint" V 4345 2538 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 4500 2350 50  0001 C CNN
+F 3 "~" H 4500 2350 50  0001 C CNN
+	1    4300 2350
 	0    1    1    0   
 $EndComp
 $Comp
@@ -876,39 +876,39 @@ $EndComp
 $Comp
 L Connector:Conn_01x05_Male J9
 U 1 1 5FB68687
-P 8250 1600
-F 0 "J9" H 8222 1482 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 8222 1573 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 8250 1600 50  0001 C CNN
-F 3 "~" H 8250 1600 50  0001 C CNN
-	1    8250 1600
+P 7800 1200
+F 0 "J9" H 7772 1082 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 7772 1173 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7800 1200 50  0001 C CNN
+F 3 "~" H 7800 1200 50  0001 C CNN
+	1    7800 1200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8050 1400 7750 1400
+	7600 1000 7300 1000
 Wire Wire Line
-	8050 1500 7750 1500
+	7600 1100 7300 1100
 Wire Wire Line
-	8050 1600 7750 1600
+	7600 1200 7300 1200
 Wire Wire Line
-	8050 1700 7750 1700
-Text Label 7750 1500 0    50   ~ 0
+	7600 1300 7300 1300
+Text Label 7300 1100 0    50   ~ 0
 RELAY2
-Text Label 7750 1600 0    50   ~ 0
+Text Label 7300 1200 0    50   ~ 0
 RELAY3
-Text Label 7750 1700 0    50   ~ 0
+Text Label 7300 1300 0    50   ~ 0
 RELAY4
-Text Label 7750 1400 0    50   ~ 0
+Text Label 7300 1000 0    50   ~ 0
 RELAY1
 $Comp
 L power:GND #PWR0105
 U 1 1 5FB8B9E6
-P 8050 1800
-F 0 "#PWR0105" H 8050 1550 50  0001 C CNN
-F 1 "GND" H 8055 1627 50  0000 C CNN
-F 2 "" H 8050 1800 50  0001 C CNN
-F 3 "" H 8050 1800 50  0001 C CNN
-	1    8050 1800
+P 7600 1400
+F 0 "#PWR0105" H 7600 1150 50  0001 C CNN
+F 1 "GND" H 7605 1227 50  0000 C CNN
+F 2 "" H 7600 1400 50  0001 C CNN
+F 3 "" H 7600 1400 50  0001 C CNN
+	1    7600 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1222,4 +1222,68 @@ Wire Wire Line
 Wire Wire Line
 	10250 5400 10350 5400
 Connection ~ 10250 5400
+Wire Notes Line
+	1150 650  5650 650 
+Wire Notes Line
+	5650 650  5650 1500
+Wire Notes Line
+	5650 1500 1150 1500
+Wire Notes Line
+	1150 1500 1150 650 
+Wire Notes Line
+	1100 1900 1100 3100
+Wire Notes Line
+	1100 3100 5200 3100
+Wire Notes Line
+	5200 3100 5200 1900
+Wire Notes Line
+	5200 1900 1100 1900
+Wire Notes Line
+	6700 550  6700 1800
+Wire Notes Line
+	6700 1800 8700 1800
+Wire Notes Line
+	8700 1800 8700 550 
+Wire Notes Line
+	8700 550  6700 550 
+Wire Notes Line
+	5600 3350 4600 3350
+Wire Notes Line
+	4600 3350 4600 6500
+Wire Notes Line
+	4600 6500 10900 6500
+Wire Notes Line
+	10900 6500 10900 1950
+Wire Notes Line
+	10900 1950 5600 1950
+Wire Notes Line
+	5600 1950 5600 3350
+Wire Notes Line
+	550  3300 550  6300
+Wire Notes Line
+	550  6300 4300 6300
+Wire Notes Line
+	4300 6300 4300 3300
+Wire Notes Line
+	4300 3300 550  3300
+Wire Notes Line
+	1600 6350 1600 7750
+Wire Notes Line
+	1600 7750 4300 7750
+Wire Notes Line
+	4300 7750 4300 6350
+Wire Notes Line
+	4300 6350 1600 6350
+Text Notes 6150 3050 0    50   ~ 0
+Relays + Protections
+Text Notes 750  3450 0    50   ~ 0
+Relay Coil Control
+Text Notes 1200 2000 0    50   ~ 0
+Power Supply
+Text Notes 1350 750  0    50   ~ 0
+Mount Holes
+Text Notes 6850 700  0    50   ~ 0
+3V3 Control Signals
+Text Notes 1700 7050 1    50   ~ 0
+Status LEDS
 $EndSCHEMATC
