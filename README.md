@@ -13,7 +13,7 @@ Input: 5V to 12V
 
 ![](tinyci-main.png)
 
-Produced: Not Yet
+Produced: In Production
 
 Target Software: Tasmota
 
@@ -28,7 +28,7 @@ Input: 5V
 
 ![](tinyci-usb.png)
 
-Produced: Not Yet
+Produced: In Production
 
 LICENCE
 -------
