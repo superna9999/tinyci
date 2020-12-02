@@ -72,13 +72,50 @@ static void got_ip_event_handler(void *arg, esp_event_base_t event_base,
     ESP_LOGI(TAG, "~~~~~~~~~~~");
 }
 
-#define PORT 1234
+#define NUM_RELAYS	4
+
+static unsigned int relays_gpio_map[NUM_RELAYS] = {
+	[0] = 2,
+	[1] = 4,
+	[2] = 14,
+	[3] = 15,
+};
+
+static void reply_str(int sock, struct sockaddr_in6 *source_addr, bool ok)
+{
+	char nok_reply[4] = "NOK";
+	char *reply = nok_reply;
+
+	if (ok)
+		reply = &nok_reply[1];
+
+	int err = sendto(sock, reply, strlen(reply)+1, 0, (struct sockaddr *)source_addr, sizeof(*source_addr));
+	if (err < 0)
+		ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
+}
+
+static bool relay_ctrl(char *cmd)
+{
+	unsigned int num = cmd[3] - '0';
+	bool enable = false;
+
+	if (!strncmp(cmd, "PWR", 3))
+		enable = true;
+
+	if (num >= NUM_RELAYS)
+		return false;
+	
+	ESP_LOGI(TAG, "%sabling Relay %d (GPIO %d)", (enable?"En":"Dis"), num, relays_gpio_map[num]);
+
+	gpio_set_level(relays_gpio_map[num], enable);
+
+	return true;
+}
 
 static void handle_cmd(int sock, struct sockaddr_in6 *source_addr,
 		       char *rx_buffer, unsigned int len)
 {
 	char addr_str[128];
-	char reply[4] = "NOK";
 
 	// Get the sender's ip address as string
 	if (source_addr->sin6_family == PF_INET) {
@@ -87,18 +124,24 @@ static void handle_cmd(int sock, struct sockaddr_in6 *source_addr,
 		inet6_ntoa_r(source_addr->sin6_addr, addr_str, sizeof(addr_str) - 1);
 	}
 
-	/* TODO */
 	ESP_LOGI(TAG, "Received %d bytes from %s:", len, addr_str);
 	ESP_LOGI(TAG, "%s", rx_buffer);
 
-	int err = sendto(sock, reply, strlen(reply)+1, 0, (struct sockaddr *)source_addr, sizeof(*source_addr));
-	if (err < 0)
-		ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
+	if (!strncmp(rx_buffer, "PWR", 3) || !strncmp(rx_buffer, "OFF", 3)) {
+		if (relay_ctrl(rx_buffer))
+			reply_str(sock, source_addr, true);
+		else
+			reply_str(sock, source_addr, false);
+	}
+	else
+		reply_str(sock, source_addr, false);
 }
+
+#define PORT 1234
 
 static void udp_server_task(void *pvParameters)
 {
-    char rx_buffer[128];
+    char rx_buffer[6];
     int addr_family = (int)pvParameters;
     int ip_protocol = 0;
     struct sockaddr_in6 dest_addr;
@@ -161,6 +204,24 @@ static void udp_server_task(void *pvParameters)
 
 void app_main(void)
 {
+    int i;
+    // Setup Relays GPIO
+    gpio_config_t io_conf;
+    //disable interrupt
+    io_conf.intr_type = GPIO_INTR_DISABLE;
+    //set as output mode
+    io_conf.mode = GPIO_MODE_OUTPUT;
+    //bit mask of the pins that you want to set,e.g.GPIO18/19
+    io_conf.pin_bit_mask = 0;
+    for (i = 0 ; i < 4/*NUM_RELAYS*/ ; ++i)
+	io_conf.pin_bit_mask |= 1 << relays_gpio_map[i];
+    //disable pull-down mode
+    io_conf.pull_down_en = 0;
+    //disable pull-up mode
+    io_conf.pull_up_en = 0;
+    //configure GPIO with the given settings
+    gpio_config(&io_conf);
+
     // Initialize TCP/IP network interface (should be called only once in application)
     ESP_ERROR_CHECK(esp_netif_init());
     // Create default event loop that running in background
