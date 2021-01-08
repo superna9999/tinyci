@@ -6,10 +6,10 @@ encoding utf-8
 Sheet 1 1
 Title "TinyCI Main"
 Date ""
-Rev "0.5"
+Rev "0.6"
 Comp "https://github.com/superna9999/tinyci"
 Comment1 "Copyright (C) 2020 Neil Armstrong"
-Comment2 "CERN OPEN HARDWARE LICENCE v1.1"
+Comment2 "CERN OPEN HARDWARE LICENCE v1.1"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -207,13 +207,13 @@ Wire Wire Line
 Wire Wire Line
 	7050 5250 7350 5250
 Wire Wire Line
-	7050 5550 7300 5550
+	7050 5750 7300 5750
 Wire Wire Line
 	6450 5250 6200 5250
 Wire Wire Line
 	4800 5650 4550 5650
 Wire Wire Line
-	5400 5550 5650 5550
+	5400 5750 5650 5750
 Wire Wire Line
 	4800 5250 4550 5250
 Wire Wire Line
@@ -230,11 +230,11 @@ Text Label 6200 5650 0    50   ~ 0
 COM
 Text Label 6200 4400 0    50   ~ 0
 COM
-Text Label 7250 4300 2    50   ~ 0
+Text Label 7250 4500 2    50   ~ 0
 NO_2
-Text Label 5650 5550 2    50   ~ 0
+Text Label 5650 5750 2    50   ~ 0
 NO_3
-Text Label 7300 5550 2    50   ~ 0
+Text Label 7300 5750 2    50   ~ 0
 NO_4
 Text Label 3750 4000 0    50   ~ 0
 COIL_2_2
@@ -694,7 +694,7 @@ $EndComp
 Wire Wire Line
 	5400 5250 5650 5250
 Wire Wire Line
-	7050 4300 7250 4300
+	7050 4500 7250 4500
 NoConn ~ 7050 4300
 NoConn ~ 7050 5550
 NoConn ~ 5400 5550
@@ -1067,10 +1067,10 @@ Wire Wire Line
 	6900 2250 7350 2250
 Wire Wire Line
 	6900 2350 7350 2350
-Text Label 5650 4300 2    50   ~ 0
+Text Label 5650 4500 2    50   ~ 0
 NO_1
 Wire Wire Line
-	5400 4300 5650 4300
+	5400 4500 5650 4500
 $Comp
 L power:GND #PWR01
 U 1 1 5FB966E8
@@ -1117,7 +1117,7 @@ U 1 1 5FBDEB0D
 P 1550 1050
 F 0 "H1" H 1450 1099 50  0000 R CNN
 F 1 "MountingHole_Pad" H 1450 1008 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 1550 1050 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1550 1050 50  0001 C CNN
 F 3 "~" H 1550 1050 50  0001 C CNN
 	1    1550 1050
 	-1   0    0    -1  
@@ -1128,7 +1128,7 @@ U 1 1 5FBE6BA1
 P 2600 1000
 F 0 "H2" H 2500 1049 50  0000 R CNN
 F 1 "MountingHole_Pad" H 2500 958 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 2600 1000 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 2600 1000 50  0001 C CNN
 F 3 "~" H 2600 1000 50  0001 C CNN
 	1    2600 1000
 	-1   0    0    -1  
@@ -1139,7 +1139,7 @@ U 1 1 5FBE73F6
 P 3650 1000
 F 0 "H3" H 3550 1049 50  0000 R CNN
 F 1 "MountingHole_Pad" H 3550 958 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 3650 1000 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 3650 1000 50  0001 C CNN
 F 3 "~" H 3650 1000 50  0001 C CNN
 	1    3650 1000
 	-1   0    0    -1  
@@ -1150,7 +1150,7 @@ U 1 1 5FBE7CBB
 P 4700 1000
 F 0 "H4" H 4600 1049 50  0000 R CNN
 F 1 "MountingHole_Pad" H 4600 958 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 4700 1000 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4700 1000 50  0001 C CNN
 F 3 "~" H 4700 1000 50  0001 C CNN
 	1    4700 1000
 	-1   0    0    -1  
