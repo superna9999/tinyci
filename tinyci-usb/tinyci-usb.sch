@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "TinyCI USB"
 Date ""
-Rev "0.1"
+Rev "0.2"
 Comp "https://github.com/superna9999/tinyci"
 Comment1 "Copyright (C) 2020 Neil Armstrong"
 Comment2 "CERN OPEN HARDWARE LICENCE v1.1"
@@ -86,11 +86,11 @@ $EndComp
 Wire Wire Line
 	2700 4500 2550 4500
 $Comp
-L power:+5V #PWR02
+L power:+VDC #PWR02
 U 1 1 5FAAE239
 P 2150 2450
 F 0 "#PWR02" H 2150 2350 50  0001 C CNN
-F 1 "+5V" H 2150 2725 50  0000 C CNN
+F 1 "+VDC" H 2150 2725 50  0000 C CNN
 F 2 "" H 2150 2450 50  0001 C CNN
 F 3 "" H 2150 2450 50  0001 C CNN
 	1    2150 2450
@@ -107,13 +107,13 @@ Wire Wire Line
 Wire Wire Line
 	7350 5350 7650 5350
 Wire Wire Line
-	7350 5650 7600 5650
+	7350 5850 7600 5850
 Wire Wire Line
 	6750 5350 6500 5350
 Wire Wire Line
 	5100 5750 4850 5750
 Wire Wire Line
-	5700 5650 5950 5650
+	5700 5850 5950 5850
 Wire Wire Line
 	5100 5350 4850 5350
 Wire Wire Line
@@ -130,11 +130,11 @@ Text Label 6500 5750 0    50   ~ 0
 COM
 Text Label 6500 4500 0    50   ~ 0
 COM
-Text Label 7550 4400 2    50   ~ 0
+Text Label 7550 4600 2    50   ~ 0
 NO_2
-Text Label 5950 5650 2    50   ~ 0
+Text Label 5950 5850 2    50   ~ 0
 NO_3
-Text Label 7600 5650 2    50   ~ 0
+Text Label 7600 5850 2    50   ~ 0
 NO_4
 Text Label 3750 4000 0    50   ~ 0
 COIL_2_2
@@ -313,11 +313,11 @@ COIL_2_4
 Text Label 6500 5350 0    50   ~ 0
 COIL_1_4
 $Comp
-L power:+5V #PWR013
+L power:+VDC #PWR013
 U 1 1 5FAEED0A
 P 7200 2400
 F 0 "#PWR013" H 7200 2300 50  0001 C CNN
-F 1 "+5V" H 7200 2675 50  0000 C CNN
+F 1 "+VDC" H 7200 2675 50  0000 C CNN
 F 2 "" H 7200 2400 50  0001 C CNN
 F 3 "" H 7200 2400 50  0001 C CNN
 	1    7200 2400
@@ -340,71 +340,47 @@ NO_3
 Text Label 8150 6000 0    50   ~ 0
 NO_4
 $Comp
-L Device:CP C3
-U 1 1 5FABF81D
-P 4300 2500
-F 0 "C3" H 4418 2546 50  0000 L CNN
-F 1 "10uF" H 4418 2455 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 4338 2350 50  0001 C CNN
-F 3 "~" H 4300 2500 50  0001 C CNN
-	1    4300 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR023
 U 1 1 5FAC7EE1
-P 3000 2650
-F 0 "#PWR023" H 3000 2400 50  0001 C CNN
-F 1 "GND" H 3005 2477 50  0000 C CNN
-F 2 "" H 3000 2650 50  0001 C CNN
-F 3 "" H 3000 2650 50  0001 C CNN
-	1    3000 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR024
-U 1 1 5FAC845A
-P 3750 2650
-F 0 "#PWR024" H 3750 2400 50  0001 C CNN
-F 1 "GND" H 3755 2477 50  0000 C CNN
-F 2 "" H 3750 2650 50  0001 C CNN
-F 3 "" H 3750 2650 50  0001 C CNN
-	1    3750 2650
+P 2600 2700
+F 0 "#PWR023" H 2600 2450 50  0001 C CNN
+F 1 "GND" H 2605 2527 50  0000 C CNN
+F 2 "" H 2600 2700 50  0001 C CNN
+F 3 "" H 2600 2700 50  0001 C CNN
+	1    2600 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR025
 U 1 1 5FAC8A20
-P 4300 2650
-F 0 "#PWR025" H 4300 2400 50  0001 C CNN
-F 1 "GND" H 4305 2477 50  0000 C CNN
-F 2 "" H 4300 2650 50  0001 C CNN
-F 3 "" H 4300 2650 50  0001 C CNN
-	1    4300 2650
+P 3900 2700
+F 0 "#PWR025" H 3900 2450 50  0001 C CNN
+F 1 "GND" H 3905 2527 50  0000 C CNN
+F 2 "" H 3900 2700 50  0001 C CNN
+F 3 "" H 3900 2700 50  0001 C CNN
+	1    3900 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3450 2350 3000 2350
 $Comp
-L power:+5V #PWR022
+L power:+VDC #PWR022
 U 1 1 5FAE0965
-P 3000 2350
-F 0 "#PWR022" H 3000 2250 50  0001 C CNN
-F 1 "+5V" H 3000 2625 50  0000 C CNN
-F 2 "" H 3000 2350 50  0001 C CNN
-F 3 "" H 3000 2350 50  0001 C CNN
-	1    3000 2350
+P 2600 2400
+F 0 "#PWR022" H 2600 2300 50  0001 C CNN
+F 1 "+VDC" H 2600 2675 50  0000 C CNN
+F 2 "" H 2600 2400 50  0001 C CNN
+F 3 "" H 2600 2400 50  0001 C CNN
+	1    2600 2400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0101
 U 1 1 5FB02001
-P 4300 2350
-F 0 "#PWR0101" H 4300 2200 50  0001 C CNN
-F 1 "+3.3V" H 4315 2523 50  0000 C CNN
-F 2 "" H 4300 2350 50  0001 C CNN
-F 3 "" H 4300 2350 50  0001 C CNN
-	1    4300 2350
+P 3900 2400
+F 0 "#PWR0101" H 3900 2250 50  0001 C CNN
+F 1 "+3.3V" H 3915 2573 50  0000 C CNN
+F 2 "" H 3900 2400 50  0001 C CNN
+F 3 "" H 3900 2400 50  0001 C CNN
+	1    3900 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -421,32 +397,6 @@ Connection ~ 1450 5200
 Wire Wire Line
 	3300 5200 3750 5200
 Connection ~ 3300 5200
-$Comp
-L Regulator_Linear:AMS1117-3.3 U1
-U 1 1 5FB11678
-P 3750 2350
-F 0 "U1" H 3750 2592 50  0000 C CNN
-F 1 "AMS1117-3.3" H 3750 2501 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3750 2550 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 3850 2100 50  0001 C CNN
-	1    3750 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 2350 4300 2350
-Connection ~ 4300 2350
-$Comp
-L Device:CP C1
-U 1 1 5FB22FA6
-P 3000 2500
-F 0 "C1" H 3118 2546 50  0000 L CNN
-F 1 "10uF" H 3118 2455 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 3038 2350 50  0001 C CNN
-F 3 "~" H 3000 2500 50  0001 C CNN
-	1    3000 2500
-	1    0    0    -1  
-$EndComp
-Connection ~ 3000 2350
 $Comp
 L Transistor_BJT:BC337 Q1
 U 1 1 5FB27126
@@ -542,7 +492,7 @@ $EndComp
 Wire Wire Line
 	5700 5350 5950 5350
 Wire Wire Line
-	7350 4400 7550 4400
+	7350 4600 7550 4600
 NoConn ~ 7350 4400
 NoConn ~ 7350 5650
 NoConn ~ 5700 5650
@@ -770,28 +720,17 @@ Wire Wire Line
 Connection ~ 9400 6000
 Wire Wire Line
 	9400 6000 8850 6000
-Text Label 5950 4400 2    50   ~ 0
+Text Label 5950 4600 2    50   ~ 0
 NO_1
 Wire Wire Line
-	5700 4400 5950 4400
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5FBBB948
-P 4300 2350
-F 0 "TP1" V 4254 2538 50  0000 L CNN
-F 1 "TestPoint" V 4345 2538 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 4500 2350 50  0001 C CNN
-F 3 "~" H 4500 2350 50  0001 C CNN
-	1    4300 2350
-	0    1    1    0   
-$EndComp
+	5700 4600 5950 4600
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5FBDEB0D
 P 1550 1050
 F 0 "H1" H 1450 1099 50  0000 R CNN
 F 1 "MountingHole_Pad" H 1450 1008 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 1550 1050 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1550 1050 50  0001 C CNN
 F 3 "~" H 1550 1050 50  0001 C CNN
 	1    1550 1050
 	-1   0    0    -1  
@@ -802,7 +741,7 @@ U 1 1 5FBE6BA1
 P 2600 1000
 F 0 "H2" H 2500 1049 50  0000 R CNN
 F 1 "MountingHole_Pad" H 2500 958 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 2600 1000 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 2600 1000 50  0001 C CNN
 F 3 "~" H 2600 1000 50  0001 C CNN
 	1    2600 1000
 	-1   0    0    -1  
@@ -813,7 +752,7 @@ U 1 1 5FBE73F6
 P 3650 1000
 F 0 "H3" H 3550 1049 50  0000 R CNN
 F 1 "MountingHole_Pad" H 3550 958 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 3650 1000 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 3650 1000 50  0001 C CNN
 F 3 "~" H 3650 1000 50  0001 C CNN
 	1    3650 1000
 	-1   0    0    -1  
@@ -824,7 +763,7 @@ U 1 1 5FBE7CBB
 P 4700 1000
 F 0 "H4" H 4600 1049 50  0000 R CNN
 F 1 "MountingHole_Pad" H 4600 958 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 4700 1000 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 4700 1000 50  0001 C CNN
 F 3 "~" H 4700 1000 50  0001 C CNN
 	1    4700 1000
 	-1   0    0    -1  
@@ -1119,7 +1058,7 @@ U 1 1 5FB79ED4
 P 10250 2500
 F 0 "J2" H 10020 2397 50  0000 R CNN
 F 1 "USB_A" H 10020 2488 50  0000 R CNN
-F 2 "Connector_USB:USB_A_Molex_105057_Vertical" H 10400 2450 50  0001 C CNN
+F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 10400 2450 50  0001 C CNN
 F 3 " ~" H 10400 2450 50  0001 C CNN
 	1    10250 2500
 	-1   0    0    1   
@@ -1130,7 +1069,7 @@ U 1 1 5FB7B95C
 P 10250 3600
 F 0 "J3" H 10020 3497 50  0000 R CNN
 F 1 "USB_A" H 10020 3588 50  0000 R CNN
-F 2 "Connector_USB:USB_A_Molex_105057_Vertical" H 10400 3550 50  0001 C CNN
+F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 10400 3550 50  0001 C CNN
 F 3 " ~" H 10400 3550 50  0001 C CNN
 	1    10250 3600
 	-1   0    0    1   
@@ -1141,7 +1080,7 @@ U 1 1 5FB7C536
 P 10250 4750
 F 0 "J4" H 10020 4647 50  0000 R CNN
 F 1 "USB_A" H 10020 4738 50  0000 R CNN
-F 2 "Connector_USB:USB_A_Molex_105057_Vertical" H 10400 4700 50  0001 C CNN
+F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 10400 4700 50  0001 C CNN
 F 3 " ~" H 10400 4700 50  0001 C CNN
 	1    10250 4750
 	-1   0    0    1   
@@ -1152,7 +1091,7 @@ U 1 1 5FB7D03D
 P 10250 5800
 F 0 "J5" H 10020 5697 50  0000 R CNN
 F 1 "USB_A" H 10020 5788 50  0000 R CNN
-F 2 "Connector_USB:USB_A_Molex_105057_Vertical" H 10400 5750 50  0001 C CNN
+F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 10400 5750 50  0001 C CNN
 F 3 " ~" H 10400 5750 50  0001 C CNN
 	1    10250 5800
 	-1   0    0    1   
@@ -1286,4 +1225,37 @@ Text Notes 6850 700  0    50   ~ 0
 3V3 Control Signals
 Text Notes 1700 7050 1    50   ~ 0
 Status LEDS
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 60025049
+P 2800 2500
+F 0 "J6" H 2880 2492 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 2880 2401 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2800 2500 50  0001 C CNN
+F 3 "~" H 2800 2500 50  0001 C CNN
+	1    2800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 6002573A
+P 4100 2500
+F 0 "J7" H 4180 2492 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 4180 2401 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4100 2500 50  0001 C CNN
+F 3 "~" H 4100 2500 50  0001 C CNN
+	1    4100 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2500 2600 2400
+Wire Wire Line
+	2650 2700 2600 2700
+Wire Wire Line
+	2600 2700 2600 2600
+Connection ~ 2600 2700
+Wire Wire Line
+	3900 2400 3900 2500
+Wire Wire Line
+	3900 2600 3900 2700
 $EndSCHEMATC
