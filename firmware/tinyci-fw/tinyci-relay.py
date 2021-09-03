@@ -29,11 +29,11 @@ def udp_client(address, payload):
         print('Could not create socket: ' + str(msg[0]) + ': ' + msg[1])
         raise
     try:
-        sock.sendto(payload, addr)
+        sock.sendto(payload.encode(), addr)
         reply, addr = sock.recvfrom(128)
         if not reply:
             return
-        print('Reply[' + addr[0] + ':' + str(addr[1]) + '] - ' + str(reply))
+        print('Reply[' + addr[0] + ':' + str(addr[1]) + '] - ' + str(reply.decode()))
     except socket.error as msg:
         print('Error Code : ' + str(msg[0]) + ' Message: ' + msg[1])
         sock.close()
