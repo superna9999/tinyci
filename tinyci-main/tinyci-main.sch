@@ -6,9 +6,9 @@ encoding utf-8
 Sheet 1 1
 Title "TinyCI Main"
 Date ""
-Rev "0.6"
+Rev "0.7"
 Comp "https://github.com/superna9999/tinyci"
-Comment1 "Copyright (C) 2020 Neil Armstrong"
+Comment1 "Copyright (C) 2021 Neil Armstrong"
 Comment2 "CERN OPEN HARDWARE LICENCE v1.1"
 Comment3 ""
 Comment4 ""
@@ -197,44 +197,44 @@ F 3 "" H 2000 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 4400 4550 4400
+	5250 4500 5000 4500
 Wire Wire Line
-	4800 4000 4550 4000
+	5250 4100 5000 4100
 Wire Wire Line
-	5400 4000 5700 4000
+	5850 4100 6150 4100
 Wire Wire Line
-	7050 4000 7350 4000
+	7500 4100 7800 4100
 Wire Wire Line
-	7050 5250 7350 5250
+	7500 5350 7800 5350
 Wire Wire Line
-	7050 5750 7300 5750
+	7500 5850 7750 5850
 Wire Wire Line
-	6450 5250 6200 5250
+	6900 5350 6650 5350
 Wire Wire Line
-	4800 5650 4550 5650
+	5250 5750 5000 5750
 Wire Wire Line
-	5400 5750 5650 5750
+	5850 5850 6100 5850
 Wire Wire Line
-	4800 5250 4550 5250
+	5250 5350 5000 5350
 Wire Wire Line
-	6450 5650 6200 5650
+	6900 5750 6650 5750
 Wire Wire Line
-	6450 4000 6200 4000
+	6900 4100 6650 4100
 Wire Wire Line
-	6450 4400 6200 4400
-Text Label 4550 4400 0    50   ~ 0
+	6900 4500 6650 4500
+Text Label 5000 4500 0    50   ~ 0
 COM
-Text Label 4550 5650 0    50   ~ 0
+Text Label 5000 5750 0    50   ~ 0
 COM
-Text Label 6200 5650 0    50   ~ 0
+Text Label 6650 5750 0    50   ~ 0
 COM
-Text Label 6200 4400 0    50   ~ 0
+Text Label 6650 4500 0    50   ~ 0
 COM
-Text Label 7250 4500 2    50   ~ 0
+Text Label 7700 4600 2    50   ~ 0
 NO_2
-Text Label 5650 5750 2    50   ~ 0
+Text Label 6100 5850 2    50   ~ 0
 NO_3
-Text Label 7300 5750 2    50   ~ 0
+Text Label 7750 5850 2    50   ~ 0
 NO_4
 Text Label 3750 4000 0    50   ~ 0
 COIL_2_2
@@ -396,21 +396,21 @@ Text Label 3750 5200 0    50   ~ 0
 COIL_2_4
 Text Label 3750 5500 0    50   ~ 0
 COIL_1_4
-Text Label 5700 4000 0    50   ~ 0
+Text Label 6150 4100 0    50   ~ 0
 COIL_2_1
-Text Label 4550 4000 0    50   ~ 0
+Text Label 5000 4100 0    50   ~ 0
 COIL_1_1
-Text Label 7350 4000 0    50   ~ 0
+Text Label 7800 4100 0    50   ~ 0
 COIL_2_2
-Text Label 6200 4000 0    50   ~ 0
+Text Label 6650 4100 0    50   ~ 0
 COIL_1_2
-Text Label 5650 5250 0    50   ~ 0
+Text Label 6100 5350 0    50   ~ 0
 COIL_2_3
-Text Label 4550 5250 0    50   ~ 0
+Text Label 5000 5350 0    50   ~ 0
 COIL_1_3
-Text Label 7350 5250 0    50   ~ 0
+Text Label 7800 5350 0    50   ~ 0
 COIL_2_4
-Text Label 6200 5250 0    50   ~ 0
+Text Label 6650 5350 0    50   ~ 0
 COIL_1_4
 $Comp
 L power:VDC #PWR013
@@ -460,8 +460,6 @@ F 3 "~" H 10250 5310 50  0001 C CNN
 	1    10200 5350
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 5250 9350 5250
 $Comp
 L Connector:Jack-DC J7
 U 1 1 5FB0EDC0
@@ -473,15 +471,11 @@ F 3 "~" H 10250 5960 50  0001 C CNN
 	1    10200 6000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 5900 9350 5900
-Text Label 8100 3750 0    50   ~ 0
-NO_1
-Text Label 8100 4500 0    50   ~ 0
+Text Label 9050 4500 0    50   ~ 0
 NO_2
-Text Label 8100 5250 0    50   ~ 0
+Text Label 9050 5250 0    50   ~ 0
 NO_3
-Text Label 8100 5900 0    50   ~ 0
+Text Label 9050 5900 0    50   ~ 0
 NO_4
 Text Label 2550 4500 0    50   ~ 0
 IO4
@@ -650,309 +644,169 @@ Connection ~ 3300 4300
 $Comp
 L Relay:SANYOU_SRD_Form_C K1
 U 1 1 5FB2C886
-P 5100 4200
-F 0 "K1" V 4533 4200 50  0000 C CNN
-F 1 "SANYOU_SRD_Form_C" V 4624 4200 50  0000 C CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 5550 4150 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5100 4200 50  0001 C CNN
-	1    5100 4200
+P 5550 4300
+F 0 "K1" V 4983 4300 50  0000 C CNN
+F 1 "SANYOU_SRD_Form_C" V 5074 4300 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 6000 4250 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5550 4300 50  0001 C CNN
+	1    5550 4300
 	0    1    1    0   
 $EndComp
 $Comp
 L Relay:SANYOU_SRD_Form_C K2
 U 1 1 5FB6E823
-P 5100 5450
-F 0 "K2" V 4533 5450 50  0000 C CNN
-F 1 "SANYOU_SRD_Form_C" V 4624 5450 50  0000 C CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 5550 5400 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5100 5450 50  0001 C CNN
-	1    5100 5450
+P 5550 5550
+F 0 "K2" V 4983 5550 50  0000 C CNN
+F 1 "SANYOU_SRD_Form_C" V 5074 5550 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 6000 5500 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 5550 5550 50  0001 C CNN
+	1    5550 5550
 	0    1    1    0   
 $EndComp
 $Comp
 L Relay:SANYOU_SRD_Form_C K4
 U 1 1 5FB6F155
-P 6750 5450
-F 0 "K4" V 6183 5450 50  0000 C CNN
-F 1 "SANYOU_SRD_Form_C" V 6274 5450 50  0000 C CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 7200 5400 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 6750 5450 50  0001 C CNN
-	1    6750 5450
+P 7200 5550
+F 0 "K4" V 6633 5550 50  0000 C CNN
+F 1 "SANYOU_SRD_Form_C" V 6724 5550 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 7650 5500 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 7200 5550 50  0001 C CNN
+	1    7200 5550
 	0    1    1    0   
 $EndComp
 $Comp
 L Relay:SANYOU_SRD_Form_C K3
 U 1 1 5FB74CF4
-P 6750 4200
-F 0 "K3" V 6183 4200 50  0000 C CNN
-F 1 "SANYOU_SRD_Form_C" V 6274 4200 50  0000 C CNN
-F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 7200 4150 50  0001 L CNN
-F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 6750 4200 50  0001 C CNN
-	1    6750 4200
+P 7200 4300
+F 0 "K3" V 6633 4300 50  0000 C CNN
+F 1 "SANYOU_SRD_Form_C" V 6724 4300 50  0000 C CNN
+F 2 "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C" H 7650 4250 50  0001 L CNN
+F 3 "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf" H 7200 4300 50  0001 C CNN
+	1    7200 4300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5400 5250 5650 5250
+	5850 5350 6100 5350
 Wire Wire Line
-	7050 4500 7250 4500
-NoConn ~ 7050 4300
-NoConn ~ 7050 5550
-NoConn ~ 5400 5550
-NoConn ~ 5400 4300
+	7500 4600 7700 4600
+NoConn ~ 7500 4400
+NoConn ~ 7500 5650
+NoConn ~ 5850 5650
+NoConn ~ 5850 4400
 NoConn ~ 8800 1550
 NoConn ~ 8800 1650
-$Comp
-L Device:Polyfuse F4
-U 1 1 5FC282F8
-P 8550 5900
-F 0 "F4" V 8325 5900 50  0000 C CNN
-F 1 "Polyfuse" V 8416 5900 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 8600 5700 50  0001 L CNN
-F 3 "~" H 8550 5900 50  0001 C CNN
-	1    8550 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Polyfuse F3
-U 1 1 5FC28A8D
-P 8550 5250
-F 0 "F3" V 8325 5250 50  0000 C CNN
-F 1 "Polyfuse" V 8416 5250 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 8600 5050 50  0001 L CNN
-F 3 "~" H 8550 5250 50  0001 C CNN
-	1    8550 5250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Polyfuse F2
-U 1 1 5FC2A161
-P 8550 4500
-F 0 "F2" V 8325 4500 50  0000 C CNN
-F 1 "Polyfuse" V 8416 4500 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 8600 4300 50  0001 L CNN
-F 3 "~" H 8550 4500 50  0001 C CNN
-	1    8550 4500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Polyfuse F1
-U 1 1 5FC2A652
-P 8550 3750
-F 0 "F1" V 8325 3750 50  0000 C CNN
-F 1 "Polyfuse" V 8416 3750 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 8600 3550 50  0001 L CNN
-F 3 "~" H 8550 3750 50  0001 C CNN
-	1    8550 3750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8400 3750 8100 3750
-Wire Wire Line
-	8400 4500 8100 4500
-Wire Wire Line
-	8400 5250 8100 5250
-Wire Wire Line
-	8400 5900 8100 5900
-Wire Wire Line
-	9350 3750 9900 3750
-Connection ~ 9350 3750
-Wire Wire Line
-	8800 3750 9350 3750
-Wire Wire Line
-	8800 3750 8700 3750
-Connection ~ 8800 3750
-Wire Wire Line
-	9900 4500 9350 4500
-Connection ~ 9350 4050
 Wire Wire Line
 	9800 4050 9350 4050
 Wire Wire Line
 	9800 3950 9800 4050
 Wire Wire Line
 	9900 3950 9800 3950
-Connection ~ 8800 4050
-Wire Wire Line
-	8800 4050 9350 4050
 $Comp
 L Device:C C2
 U 1 1 5FC5B013
-P 9350 3900
-F 0 "C2" H 9465 3946 50  0000 L CNN
-F 1 "1000uF" H 9465 3855 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 9388 3750 50  0001 C CNN
-F 3 "~" H 9350 3900 50  0001 C CNN
-	1    9350 3900
+P 5000 4650
+F 0 "C2" H 5115 4696 50  0000 L CNN
+F 1 "1000uF" H 5115 4605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5038 4500 50  0001 C CNN
+F 3 "~" H 5000 4650 50  0001 C CNN
+	1    5000 4650
 	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4001 D5
-U 1 1 5FC5A49A
-P 8800 3900
-F 0 "D5" V 8754 3979 50  0000 L CNN
-F 1 "1N4001" V 8845 3979 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8800 3725 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8800 3900 50  0001 C CNN
-	1    8800 3900
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR014
 U 1 1 5FB02165
-P 8800 4050
-F 0 "#PWR014" H 8800 3800 50  0001 C CNN
-F 1 "GND" H 8805 3877 50  0000 C CNN
-F 2 "" H 8800 4050 50  0001 C CNN
-F 3 "" H 8800 4050 50  0001 C CNN
-	1    8800 4050
+P 5000 4800
+F 0 "#PWR014" H 5000 4550 50  0001 C CNN
+F 1 "GND" H 5005 4627 50  0000 C CNN
+F 2 "" H 5000 4800 50  0001 C CNN
+F 3 "" H 5000 4800 50  0001 C CNN
+	1    5000 4800
 	1    0    0    -1  
 $EndComp
-Connection ~ 9350 4800
 Wire Wire Line
 	9800 4800 9350 4800
 Wire Wire Line
 	9800 4700 9800 4800
 Wire Wire Line
 	9900 4700 9800 4700
-Connection ~ 8800 4800
-Wire Wire Line
-	8800 4800 9350 4800
 $Comp
 L Device:C C4
 U 1 1 5FC9FC6D
-P 9350 4650
-F 0 "C4" H 9465 4696 50  0000 L CNN
-F 1 "1000uF" H 9465 4605 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 9388 4500 50  0001 C CNN
-F 3 "~" H 9350 4650 50  0001 C CNN
-	1    9350 4650
+P 5000 5900
+F 0 "C4" H 5115 5946 50  0000 L CNN
+F 1 "1000uF" H 5115 5855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5038 5750 50  0001 C CNN
+F 3 "~" H 5000 5900 50  0001 C CNN
+	1    5000 5900
 	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4001 D6
-U 1 1 5FC9FC73
-P 8800 4650
-F 0 "D6" V 8754 4729 50  0000 L CNN
-F 1 "1N4001" V 8845 4729 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8800 4475 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8800 4650 50  0001 C CNN
-	1    8800 4650
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR015
 U 1 1 5FC9FC79
-P 8800 4800
-F 0 "#PWR015" H 8800 4550 50  0001 C CNN
-F 1 "GND" H 8805 4627 50  0000 C CNN
-F 2 "" H 8800 4800 50  0001 C CNN
-F 3 "" H 8800 4800 50  0001 C CNN
-	1    8800 4800
+P 6650 4800
+F 0 "#PWR015" H 6650 4550 50  0001 C CNN
+F 1 "GND" H 6655 4627 50  0000 C CNN
+F 2 "" H 6650 4800 50  0001 C CNN
+F 3 "" H 6650 4800 50  0001 C CNN
+	1    6650 4800
 	1    0    0    -1  
 $EndComp
-Connection ~ 9350 5550
 Wire Wire Line
 	9800 5550 9350 5550
 Wire Wire Line
 	9800 5450 9800 5550
 Wire Wire Line
 	9900 5450 9800 5450
-Connection ~ 8800 5550
-Wire Wire Line
-	8800 5550 9350 5550
 $Comp
 L Device:C C5
 U 1 1 5FCA2EF2
-P 9350 5400
-F 0 "C5" H 9465 5446 50  0000 L CNN
-F 1 "1000uF" H 9465 5355 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 9388 5250 50  0001 C CNN
-F 3 "~" H 9350 5400 50  0001 C CNN
-	1    9350 5400
+P 6650 4650
+F 0 "C5" H 6765 4696 50  0000 L CNN
+F 1 "1000uF" H 6765 4605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 6688 4500 50  0001 C CNN
+F 3 "~" H 6650 4650 50  0001 C CNN
+	1    6650 4650
 	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4001 D7
-U 1 1 5FCA2EF8
-P 8800 5400
-F 0 "D7" V 8754 5479 50  0000 L CNN
-F 1 "1N4001" V 8845 5479 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8800 5225 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8800 5400 50  0001 C CNN
-	1    8800 5400
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR020
 U 1 1 5FCA2EFE
-P 8800 5550
-F 0 "#PWR020" H 8800 5300 50  0001 C CNN
-F 1 "GND" H 8805 5377 50  0000 C CNN
-F 2 "" H 8800 5550 50  0001 C CNN
-F 3 "" H 8800 5550 50  0001 C CNN
-	1    8800 5550
+P 6650 6050
+F 0 "#PWR020" H 6650 5800 50  0001 C CNN
+F 1 "GND" H 6655 5877 50  0000 C CNN
+F 2 "" H 6650 6050 50  0001 C CNN
+F 3 "" H 6650 6050 50  0001 C CNN
+	1    6650 6050
 	1    0    0    -1  
 $EndComp
-Connection ~ 9350 6200
 Wire Wire Line
 	9800 6200 9350 6200
 Wire Wire Line
 	9800 6100 9800 6200
 Wire Wire Line
 	9900 6100 9800 6100
-Connection ~ 8800 6200
-Wire Wire Line
-	8800 6200 9350 6200
 $Comp
 L Device:C C6
 U 1 1 5FCA6572
-P 9350 6050
-F 0 "C6" H 9465 6096 50  0000 L CNN
-F 1 "1000uF" H 9465 6005 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 9388 5900 50  0001 C CNN
-F 3 "~" H 9350 6050 50  0001 C CNN
-	1    9350 6050
+P 6650 5900
+F 0 "C6" H 6765 5946 50  0000 L CNN
+F 1 "1000uF" H 6765 5855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 6688 5750 50  0001 C CNN
+F 3 "~" H 6650 5900 50  0001 C CNN
+	1    6650 5900
 	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4001 D8
-U 1 1 5FCA6578
-P 8800 6050
-F 0 "D8" V 8754 6129 50  0000 L CNN
-F 1 "1N4001" V 8845 6129 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8800 5875 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8800 6050 50  0001 C CNN
-	1    8800 6050
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR021
 U 1 1 5FCA657E
-P 8800 6200
-F 0 "#PWR021" H 8800 5950 50  0001 C CNN
-F 1 "GND" H 8805 6027 50  0000 C CNN
-F 2 "" H 8800 6200 50  0001 C CNN
-F 3 "" H 8800 6200 50  0001 C CNN
-	1    8800 6200
+P 5000 6050
+F 0 "#PWR021" H 5000 5800 50  0001 C CNN
+F 1 "GND" H 5005 5877 50  0000 C CNN
+F 2 "" H 5000 6050 50  0001 C CNN
+F 3 "" H 5000 6050 50  0001 C CNN
+	1    5000 6050
 	1    0    0    -1  
 $EndComp
-Connection ~ 8800 4500
-Wire Wire Line
-	8800 4500 8700 4500
-Connection ~ 9350 4500
-Wire Wire Line
-	9350 4500 8800 4500
-Connection ~ 8800 5250
-Wire Wire Line
-	8800 5250 8700 5250
-Connection ~ 9350 5250
-Wire Wire Line
-	9350 5250 8800 5250
-Connection ~ 8800 5900
-Wire Wire Line
-	8800 5900 8700 5900
-Connection ~ 9350 5900
-Wire Wire Line
-	9350 5900 8800 5900
 NoConn ~ 6750 1550
 NoConn ~ 6750 1650
 NoConn ~ 8800 2050
@@ -1067,10 +921,10 @@ Wire Wire Line
 	6900 2250 7350 2250
 Wire Wire Line
 	6900 2350 7350 2350
-Text Label 5650 4500 2    50   ~ 0
+Text Label 6100 4600 2    50   ~ 0
 NO_1
 Wire Wire Line
-	5400 4500 5650 4500
+	5850 4600 6100 4600
 $Comp
 L power:GND #PWR01
 U 1 1 5FB966E8
@@ -1495,4 +1349,58 @@ Text Notes 800  3550 0    50   ~ 0
 Relay Coil Control
 Text Notes 2500 6450 0    50   ~ 0
 Status LEDS
+Text Label 9050 3750 0    50   ~ 0
+NO_1
+Wire Wire Line
+	9050 5250 9900 5250
+Wire Wire Line
+	9050 5900 9900 5900
+Wire Wire Line
+	9050 3750 9900 3750
+Wire Wire Line
+	9050 4500 9900 4500
+$Comp
+L power:GND #PWR0106
+U 1 1 619101E8
+P 9350 6200
+F 0 "#PWR0106" H 9350 5950 50  0001 C CNN
+F 1 "GND" H 9355 6027 50  0000 C CNN
+F 2 "" H 9350 6200 50  0001 C CNN
+F 3 "" H 9350 6200 50  0001 C CNN
+	1    9350 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 61910732
+P 9350 5550
+F 0 "#PWR0107" H 9350 5300 50  0001 C CNN
+F 1 "GND" H 9355 5377 50  0000 C CNN
+F 2 "" H 9350 5550 50  0001 C CNN
+F 3 "" H 9350 5550 50  0001 C CNN
+	1    9350 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 61910B2D
+P 9350 4800
+F 0 "#PWR0108" H 9350 4550 50  0001 C CNN
+F 1 "GND" H 9355 4627 50  0000 C CNN
+F 2 "" H 9350 4800 50  0001 C CNN
+F 3 "" H 9350 4800 50  0001 C CNN
+	1    9350 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 61910F69
+P 9350 4050
+F 0 "#PWR0109" H 9350 3800 50  0001 C CNN
+F 1 "GND" H 9355 3877 50  0000 C CNN
+F 2 "" H 9350 4050 50  0001 C CNN
+F 3 "" H 9350 4050 50  0001 C CNN
+	1    9350 4050
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
