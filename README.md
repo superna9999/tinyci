@@ -15,7 +15,8 @@ Input: 5V
 
 Produced:
 - v0.5: x5 produced, x4 soldered, x3 used in production
-- v0.7: In Production (JLCPCB)
+- v0.7: x5 produced & used in production
+- v0.8: Design done
 
 ESP32 Firmware: see `firmware/tinyci-fw/`
 
@@ -31,8 +32,8 @@ Input: 5V to 12V
 ![](tinyci-usb.png)
 
 Produced:
-- v0.1: x5 produced, x1 soldered, x0 used in production
-- v0.3: In Production (ALLPCB)
+- v0.1: x5 produced, x3 soldered, x2 used in production
+- v0.3: x5 Produced, x0 used in production
 
 TinySerial
 -----------
