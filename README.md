@@ -46,7 +46,7 @@ Input: USB
 ![](tinyserial.png)
 
 Produced:
-- v1: In Production (JLCPCB)
+- v1: x5 Produced, failed to bringup, will be replaced with OctoSerial using CH348Q
 
 LICENCE
 -------
