@@ -6,7 +6,7 @@
 
   (title_block
     (title "TinyCI Main USB connectors")
-    (rev "0.7")
+    (rev "0.8")
     (company "https://github.com/superna9999/tinyci")
     (comment 1 "Copyright (C) 2021 Neil Armstrong")
     (comment 2 "CERN OPEN HARDWARE LICENCE v1.1")
@@ -234,8 +234,8 @@
   )
 
   (no_connect (at 129.54 66.04) (uuid 2f2218df-e6c4-48ed-8b8f-5922e56a1e3b))
-  (no_connect (at 129.54 109.22) (uuid 2f2218df-e6c4-48ed-8b8f-5922e56a1e3b))
-  (no_connect (at 129.54 152.4) (uuid 2f2218df-e6c4-48ed-8b8f-5922e56a1e3b))
+  (no_connect (at 129.54 109.22) (uuid 2f2218df-e6c4-48ed-8b8f-5922e56a1e3c))
+  (no_connect (at 129.54 152.4) (uuid 2f2218df-e6c4-48ed-8b8f-5922e56a1e3d))
   (no_connect (at 129.54 22.86) (uuid 4ab7cdb3-5721-4ca8-a10d-eab88713ad93))
 
   (wire (pts (xy 124.46 111.76) (xy 129.54 111.76))
