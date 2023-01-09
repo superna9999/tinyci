@@ -127,6 +127,16 @@ static void handle_cmd(int sock, struct sockaddr_in6 *source_addr,
 	ESP_LOGI(TAG, "Received %d bytes from %s:", len, addr_str);
 	ESP_LOGI(TAG, "%s", rx_buffer);
 
+	if (!strncmp(rx_buffer, "VERSION", 7)) {
+		char reply[128];
+
+		sprintf(reply, "TINYCI %s", IDF_VER);
+		int err = sendto(sock, reply, strlen(reply)+1, 0, (struct sockaddr *)source_addr, sizeof(*source_addr));
+		if (err < 0)
+			ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
+		return;
+	}
+
 	if (!strncmp(rx_buffer, "PWR", 3) || !strncmp(rx_buffer, "OFF", 3)) {
 		if (relay_ctrl(rx_buffer))
 			reply_str(sock, source_addr, true);
@@ -141,7 +151,7 @@ static void handle_cmd(int sock, struct sockaddr_in6 *source_addr,
 
 static void udp_server_task(void *pvParameters)
 {
-    char rx_buffer[6];
+    char rx_buffer[10];
     int addr_family = (int)pvParameters;
     int ip_protocol = 0;
     struct sockaddr_in6 dest_addr;
