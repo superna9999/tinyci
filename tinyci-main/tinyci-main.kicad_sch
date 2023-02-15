@@ -6,7 +6,7 @@
 
   (title_block
     (title "TinyCI Main")
-    (rev "0.8")
+    (rev "0.9")
     (company "https://github.com/superna9999/tinyci")
     (comment 1 "Copyright (C) 2021 Neil Armstrong")
     (comment 2 "CERN OPEN HARDWARE LICENCE v1.1")
